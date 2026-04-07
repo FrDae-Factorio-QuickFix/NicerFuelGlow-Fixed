@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.10
+  Changes:
+    - Dimmed glow of electric furnaces, added orange glow to oil refinery flames.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.7
   Changes:
     - Added failsafe: Fuels with non-standard units now default to red; no longer cause error.
