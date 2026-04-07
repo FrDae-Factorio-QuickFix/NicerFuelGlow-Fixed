@@ -1,37 +1,72 @@
 --/c game.player.print(game.item_prototypes["coal"].fuel_glow_color)
 
 --function to check 10^x unit, convert to base 10^1
-local function joulify(energyvalue)		
-			if energyvalue:find("YJ") ~= nil then
-				joulevalue = ((energyvalue:gsub("YJ", "")) * (10^24))
-				return joulevalue end
-			if energyvalue:find("ZJ") ~= nil then
-				joulevalue = ((energyvalue:gsub("ZJ", "")) * (10^21))
-				return joulevalue end
-			if energyvalue:find("EJ") ~= nil then
-				joulevalue = ((energyvalue:gsub("EJ", "")) * (10^18))
-				return joulevalue end
-			if energyvalue:find("PJ") ~= nil then
-				joulevalue = ((energyvalue:gsub("PJ", "")) * (10^15))
-				return joulevalue end
-			if energyvalue:find("TJ") ~= nil then
-				joulevalue = ((energyvalue:gsub("TJ", "")) * (10^12))
-				return joulevalue end
-			if energyvalue:find("GJ") ~= nil then
-				joulevalue = ((energyvalue:gsub("GJ", "")) * (10^9))
-				return joulevalue end
-			if energyvalue:find("MJ") ~= nil then
-				joulevalue = ((energyvalue:gsub("MJ", "")) * (10^6))
-				return joulevalue end
-			if energyvalue:find("KJ") ~= nil then
-				joulevalue = ((energyvalue:gsub("KJ", "")) * (10^3))
-				return joulevalue end
-			if energyvalue:find("kJ") ~= nil then
-				joulevalue = ((energyvalue:gsub("kJ", "")) * (10^3))
-				return joulevalue end
-			--if energyvalue:find("J") ~= nil then
-				joulevalue = energyvalue:gsub("J", "")
-				return joulevalue --end
+local energyvalue = 0
+local function joulify(energystring)
+
+			if energystring:find("YJ") then
+				energyvalue = energystring:gsub("YJ", "")
+				if tonumber(energyvalue) then
+					joulevalue = (energyvalue) * (10^24)
+					return joulevalue end end
+
+			if energystring:find("ZJ") then
+				energyvalue = energystring:gsub("ZJ", "")
+				if tonumber(energyvalue) then
+					joulevalue = (energyvalue) * (10^21)
+					return joulevalue end end
+
+			if energystring:find("EJ") then
+				energyvalue = energystring:gsub("EJ", "")
+				if tonumber(energyvalue) then
+					joulevalue = (energyvalue) * (10^18)
+					return joulevalue end end
+
+			if energystring:find("PJ") then
+				energyvalue = energystring:gsub("PJ", "")
+				if tonumber(energyvalue) then
+					joulevalue = (energyvalue) * (10^15)
+					return joulevalue end end
+
+			if energystring:find("TJ") then
+				energyvalue = energystring:gsub("TJ", "")
+				if tonumber(energyvalue) then
+					joulevalue = (energyvalue) * (10^12)
+					return joulevalue end end
+
+			if energystring:find("GJ") then
+				energyvalue = energystring:gsub("GJ", "")
+				if tonumber(energyvalue) then
+					joulevalue = (energyvalue) * (10^9)
+					return joulevalue end end
+
+			if energystring:find("MJ") then
+				energyvalue = energystring:gsub("MJ", "")
+				if tonumber(energyvalue) then
+					joulevalue = (energyvalue) * (10^6)
+					return joulevalue end end
+
+			if energystring:find("KJ") then
+				energyvalue = energystring:gsub("KJ", "")
+				if tonumber(energyvalue) then
+					joulevalue = (energyvalue) * (10^3)
+					return joulevalue end end
+
+			if energystring:find("kJ") then
+				energyvalue = energystring:gsub("kJ", "")
+				if tonumber(energyvalue) then
+					joulevalue = (energyvalue) * (10^3)
+					return joulevalue end end
+
+			if energystring:find("J") then
+				energyvalue = energystring:gsub("J", "")
+				if tonumber(energyvalue) then
+					joulevalue = (energyvalue)
+					return joulevalue end end
+
+			--failsafe
+			joulevalue = 0
+			return joulevalue
 end
 
 --retrieve settings
