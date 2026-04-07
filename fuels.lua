@@ -12,9 +12,13 @@ local	solidfuel = table.deepcopy(data.raw.item["solid-fuel"])
 local	rocketfuel = table.deepcopy(data.raw.item["rocket-fuel"])
 		rocketfuel.fuel_glow_color = {r = 1, g = 1, b = 0.4, a = 0.8}
 
+local	nuclearreactorfuel = table.deepcopy(data.raw.item["uranium-fuel-cell"])
+		nuclearreactorfuel.fuel_glow_color = {r = 51/255, g = 245/255, b = 35/255, a = 1}
+
+		
 local	nuclearfuel = table.deepcopy(data.raw.item["nuclear-fuel"])
 		nuclearfuel.fuel_glow_color = {r = 0.75, g = 1, b = 0.5, a = 1} --255, 232, 179
 		
-			data:extend{ wood, coal, solidfuel, rocketfuel, nuclearfuel}
+			data:extend{ wood, coal, solidfuel, rocketfuel, nuclearreactorfuel, nuclearfuel}
 		
 end
