@@ -18,8 +18,8 @@ data:extend({
     name = "color-multiplier",
     order = "c",
     setting_type = "startup",
-    default_value = 3,
-    minimum_value = 2
+    default_value = 2,
+    minimum_value = 1
   },
     {
     type = "bool-setting",

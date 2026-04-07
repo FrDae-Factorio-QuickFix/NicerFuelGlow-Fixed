@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.7
+  Changes:
+    - Added failsafe: Fuels with non-standard units now default to red; no longer cause error.
+    - Changed spectrum from [n]rt/[n]rt to log[n] scale for extra nerd cred, didn't like it, changed it back.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.4
   Changes:
     - Changed settings to strings so users don't have to convert xJ to Joules in their head.
