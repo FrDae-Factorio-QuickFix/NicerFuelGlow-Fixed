@@ -1,4 +1,4 @@
-if settings.startup["lock-vanilla-fuels"].value then  -- simpler boolean test
+if settings.startup["lock-vanilla-fuels"].value then  
 
   local wood = table.deepcopy(data.raw.item["wood"])
   wood.fuel_glow_color = {r = 1, g = 0.25, b = 0.1, a = 0.2}
@@ -13,10 +13,10 @@ if settings.startup["lock-vanilla-fuels"].value then  -- simpler boolean test
   rocketfuel.fuel_glow_color = {r = 1, g = 1, b = 0.4, a = 0.8}
 
   local nuclearreactorfuel = table.deepcopy(data.raw.item["uranium-fuel-cell"])
-  nuclearreactorfuel.fuel_glow_color = {r = 51/255, g = 245/255, b = 35/255, a = 1}
+  nuclearreactorfuel.fuel_glow_color = {r = 0.2, g = 0.96, b = 0.137, a = 1}
   
   local nuclearfuel = table.deepcopy(data.raw.item["nuclear-fuel"])
-  nuclearfuel.fuel_glow_color = {r = 0.75, g = 1, b = 0.5, a = 1}   -- using 0–1 values
+  nuclearfuel.fuel_glow_color = {r = 0.75, g = 1, b = 0.5, a = 1}  
   
   data:extend{ wood, coal, solidfuel, rocketfuel, nuclearreactorfuel, nuclearfuel}
 
