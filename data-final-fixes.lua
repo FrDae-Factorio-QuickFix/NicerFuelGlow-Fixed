@@ -84,7 +84,7 @@ for i, thisitem in pairs(data.raw.item) do
 		goto skipitem
 
 		--find all other fuels
-		elseif thisitem.fuel_value then
+		elseif thisitem.fuel_value and (thisitem.fuel_category == "chemical" or thisitem.fuel_category == "vehicle-fuel") then
 			--retrieve each converted fuel value
 			local fl_value = joulify(thisitem.fuel_value)
 			--thought I had to convert the string to a number before maths. nope!

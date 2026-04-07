@@ -1,6 +1,7 @@
 require("util")
 require("fuels")
 
+--[[
 data.raw.furnace["stone-furnace"].working_visualisations =
 	{
 		{
@@ -102,13 +103,16 @@ data.raw["assembling-machine"]["oil-refinery"].working_visualisations =
 		light = {intensity = 1, size = 5, color = {r = 1.0, g = 0.5, b = 0.2}}
 		}
 	}
-		
+		--]]
+if data.raw.furnace["electric-furnace"] then 
 table.insert(data.raw.furnace["electric-furnace"].working_visualisations, {
 	light = {
 		intensity = 0.4,
 		size = 9,
 		color = {r=1, g=0.625, b=0.25} } } )
+end
 		
+--[[
 -- refinery 0.9 but smol, stlfurnace 0.8, stnfurn 0.7, boiler 0.6, htxchng 0.5, electric 0.4
 -- boilers stuck at 1 seemingly soooo
 -- 1 boiler 1 refin 0.8 steel 0.6 stone 0.4 electric
@@ -351,3 +355,5 @@ table.insert(data.raw.furnace["electric-furnace"].working_visualisations, {
             -- scale = 0.5
           -- }
         -- })
+
+        --]]
