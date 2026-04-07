@@ -26,6 +26,6 @@ data:extend({
     name = "lock-vanilla-fuels",
     order = "d",
     setting_type = "startup",
-    default_value = 1
+    default_value = true
   }
 })
