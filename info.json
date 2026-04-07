@@ -1,10 +1,10 @@
 {
     "name": "NicerFuelGlow-Fixed",
-    "version": "1.0.17",
-    "title": "NicerFuelGlow (temp fix)",
+    "version": "1.0.18",
+    "title": "Nicer Fuel Glow for Space Age",
     "author": "Grillex",
     "homepage": "",
     "factorio_version": "2.0",
-    "dependencies": ["base >= 2.0", "? space-exploration", "? Krastorio2"],
+    "dependencies": ["base >= 2.0", "? space-exploration", "? Krastorio2", "? maraxsis"],
     "description": "Adds a subtle tint to the glow of burner entities depending on what fuel they're using.\nReupload of the Nicer Fuel Glow mod by FlamingCarrot and later fixes of wretlaw120"
 }
