@@ -1,19 +1,17 @@
 data:extend({
 {
-    type = "int-setting",
+    type = "string-setting",
     name = "peak-fuel-value",
     order = "a",
     setting_type = "startup",
-    default_value = 1210000000,
-    minimum_value = 2000001
+    default_value = "1.21GJ",
   },
     {
-    type = "int-setting",
+    type = "string-setting",
     name = "floor-fuel-value",
     order = "b",
     setting_type = "startup",
-    default_value = 2000000,
-    minimum_value = 1
+    default_value = "2MJ",
   },
     {
     type = "int-setting",

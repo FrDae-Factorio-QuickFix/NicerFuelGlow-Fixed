@@ -1,0 +1,12 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+  Changes:
+    - Changed settings to strings so users don't have to convert xJ to Joules in their head.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+  Changes:
+    - Added electric furnace support, modded fuel support.
+---------------------------------------------------------------------------------------------------
+Version: 0.9.0
+  Changes:
+    - Initial experimental release for latest experimental (0.18), latest stable (0.17) and latest potato-compatible (0.16).
